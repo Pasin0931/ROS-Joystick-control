@@ -4,10 +4,10 @@ import rospy
 from sensor_msgs.msg import Joy
 from std_msgs.msg import Float32MultiArray
 
-# Define the publisher
+# publisher
 pub = rospy.Publisher('robot_cmd_vel', Float32MultiArray, queue_size=10)
 
-# Speed scaling factor (global variable)
+# Speed
 speed_factor = 0.5  # Start at 50%
 
 def joy_callback(data):
