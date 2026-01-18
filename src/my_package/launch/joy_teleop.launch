@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="joy" type="joy_node" name="joy_node" />
+  <node pkg="my_package" type="joy_teleop.py" name="joy_teleop" output="screen" />
+</launch>
